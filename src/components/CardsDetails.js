@@ -1,7 +1,7 @@
 import React,{ useEffect, useState } from 'react'
 // import CardsData from './CardsData'
 import {Table} from 'react-bootstrap'
-import { NavLink, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 // import { useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { DLT , ADD , REMOVE } from '../redux/actions/action'
@@ -49,7 +49,7 @@ const remove = (item)=>{
 }
 
   useEffect(() => {
-     compare();
+     compare()
   }, [id])
 
   return (

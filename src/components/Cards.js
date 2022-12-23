@@ -9,8 +9,8 @@ import { ADD } from '../redux/actions/action';
 const Cards = () => {
 
   const [data, setData] = useState(Cardsdata);
-  // console.log(data);
-
+  console.log(setData);
+  
 
   const dispatch = useDispatch();
 
