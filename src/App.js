@@ -32,8 +32,8 @@ function App() {
      <Route exact path="/contact">
       <Contact/>
      </Route>
-     <Route path='/cart/:id'>
-       <CardsDetails/>
+     <Route exact path="/cart/:id">
+      <CardsDetails/>
      </Route>
    </Switch>
   </BrowserRouter>

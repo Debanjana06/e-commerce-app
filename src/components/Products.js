@@ -60,7 +60,7 @@ const Products = () => {
           return (
             <>
                 <Card style={{ width: '22rem',border:"none" }} className="mx-2 mt-4 card_style" key={id}>
-                  <Card.Img variant="top" src={Product.imgdata} style={{height:"16rem"}} className="mt-3" />
+                  <Card.Img variant="top" src={Product.imgdata} style={{height:"16rem"}} className="mt-3" key={id} />
                   <Card.Body>
                     <Card.Title className="mb-0">{Product.rname.substring(0, 12)}</Card.Title>
                     <Card.Text className="lead fw-bold">

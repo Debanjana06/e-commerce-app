@@ -106,12 +106,12 @@ const Header = () => {
                                 </thead>
                                 <tbody>
                                     {
-                                        getdata.map((e)=>{
+                                        getdata.map((e,ind)=>{
                                             return (
                                                 <>
                                                     <tr>
                                                         <td>
-                                                        <NavLink to={`/cart/${e.id}`}   onClick={handleClose}>
+                                                        <NavLink to={`/cart/${e.id}`}   onClick={handleClose} key={ind}>
                                                         <img src={e.imgdata} style={{width:"5rem",height:"5rem"}} alt="" />
                                                         </NavLink>   
                                                         </td>

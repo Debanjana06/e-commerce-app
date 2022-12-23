@@ -32,7 +32,10 @@ function Contact() {
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
 
-                    <Button variant="primary" type="submit">
+                   {submit && <Alert variant="success">
+                        <Alert.Heading>Hey, your details have been saved!</Alert.Heading>
+                    </Alert>}
+                    <Button variant="primary" type="submit" onClick={()=>setSubmit(true)}>
                         Submit
                     </Button>
                 </Form>
